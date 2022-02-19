@@ -4,6 +4,7 @@
 // Generate stack tracer for aarch64
 
 #if defined(__linux__)
+#include <ucontext.h>
 #include <sys/mman.h>
 #include <ucontext.h>
 #include <unistd.h>
