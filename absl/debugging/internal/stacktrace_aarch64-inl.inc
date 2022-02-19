@@ -3,8 +3,9 @@
 
 // Generate stack tracer for aarch64
 
+#define __UCLIBC_HAS_CONTEXT_FUNCS__
+
 #if defined(__linux__)
-#include <ucontext.h>
 #include <sys/mman.h>
 #include <ucontext.h>
 #include <unistd.h>
